@@ -1,10 +1,10 @@
-import TwitterIcon from '@mui/icons-material/Twitter';
-
-const NavLink = ({icon}) => {
+import styles from './navLink.module.css'
+const NavLink = ({text, Icon}) => {
   return (
-    <button>
-      {icon} 
-    </button>
+    <div className={styles.links}>
+      <Icon className={styles.icon}/>
+      <h2 className={styles.h2}>{text}</h2>
+    </div>
   )
 }
 

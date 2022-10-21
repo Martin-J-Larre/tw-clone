@@ -5,8 +5,9 @@
 }
 
 :root{
-  --twitter-color:#50b7f5;
   --twitter-bg:#e6ecf0;
+  --twitter-color:#50b7f5;
+  --twitter-nav-bg:#e8f5fe;
 }
 .App{
   display: flex;

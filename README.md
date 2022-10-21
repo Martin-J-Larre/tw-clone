@@ -11,6 +11,9 @@
 ### Built with
 
 - CRA
+- Material UI
+- CSS modules
+- FlexBox
 
 
 ## Demo
