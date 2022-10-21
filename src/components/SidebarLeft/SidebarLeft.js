@@ -1,8 +1,16 @@
-import React from 'react'
+import HomeIcon from '@mui/icons-material/Home';
+import { iconsSidebarLeft } from '../../helpers/iconsSiderbarLeft';
+import NavLink from './siderbarLeftComponents/NavLink';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
-const SidebarLeft = () => {
+const SidebarLeft = ({icon}) => {
   return (
-    <div>SidebarLeft</div>
+    <div>
+      <TwitterIcon />
+      <NavLink icon={iconsSidebarLeft[0]}/>
+      
+
+    </div>
   )
 }
 
