@@ -1,11 +1,17 @@
-.flex{
-    border: 1px solid var(--twitter-bg);
-    display: flex;
-    flex-direction: column;
-    /* flex: 0.3; */
+.sidebar{
+    border: 1px solid brown;
+    border-right: 1px solid var(--twitter-bg);
+    flex: 0.3;
+    margin-left: 100px;
+    max-width: 250px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+}
+.twIcon{
+    color: var(--twitter-color);
+    font-size: 30px !important;
+    margin: 0 20px 10px 20px;
 }
 .twButton{
     background-color: var(--twitter-color) !important;
@@ -15,5 +21,5 @@
     text-transform: inherit !important;
     border-radius:  30px !important;
     height: 50px !important;
-    margin-top: 20px !important;
+    margin-top: 10px !important;
 }

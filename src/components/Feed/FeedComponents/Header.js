@@ -1,7 +1,11 @@
+import styles from './header.module.css'
 
-
-export const Header = () => {
+const Header = () => {
   return (
-    <div>Header</div>
+    <header className={styles.header}>
+      <h2 >Home</h2>
+    </header>
   )
 }
+
+export default Header

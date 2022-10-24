@@ -3,7 +3,7 @@ const NavLink = ({active,text, Icon}) => {
   return (
     <div className={styles.links + ' ' + (active ? styles.linkActive : '')}> 
       <Icon className={styles.icon}/>
-      <h2 className={styles.h2}>{text}</h2>
+      <h3 className={styles.h3}>{text}</h3>
     </div>
   )
 }

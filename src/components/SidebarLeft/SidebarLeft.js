@@ -13,8 +13,8 @@ import styles from './sidebarLeft.module.css';
 
 const SidebarLeft = () => {
   return (
-    <div className={styles.flex}>
-      <TwitterIcon />
+    <section className={styles.sidebar}>
+      <TwitterIcon className={styles.twIcon} />
       <NavLink active text="Home"  Icon={HomeIcon} />
       <NavLink text="Explore" Icon={TagIcon} />
       <NavLink text="Notifications" Icon={NotificationsNoneIcon} />
@@ -24,7 +24,7 @@ const SidebarLeft = () => {
       <NavLink text="Profile" Icon={PermIdentityIcon} />
       <NavLink text="More" Icon={MoreHorizIcon} />
       <Button variant='outlined' className={styles.twButton} fullWidth>Tweet</Button>
-    </div>
+    </section>
   )
 }
 

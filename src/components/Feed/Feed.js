@@ -1,8 +1,10 @@
 import styles from './feed.module.css'
-
+import Header from './FeedComponents/Header'
 const Feed = () => {
   return (
-    <div>Feed</div>
+    <section className={styles.feed}>
+        <Header />
+    </section>
   )
 }
 
