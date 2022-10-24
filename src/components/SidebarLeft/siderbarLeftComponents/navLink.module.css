@@ -9,6 +9,9 @@
     border-radius: 30px;
     transition: color 0.1s ease-out;
 }
+.linkActive{
+    color: var(--twitter-color);
+}
 .icon{
     margin: 15px;
 }
