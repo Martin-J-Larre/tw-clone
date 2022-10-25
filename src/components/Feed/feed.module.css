@@ -1,7 +1,14 @@
 .feed{
     flex: 0.4;
-    border: 1px solid red;
     border-right: 1px solid var(--twitter-bg);
     min-width: fit-content;
     overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+.feed{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
