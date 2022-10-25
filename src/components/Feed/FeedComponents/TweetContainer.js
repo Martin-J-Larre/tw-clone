@@ -9,7 +9,8 @@ const TweetContainer = () => {
                 <Avatar src='https://cdn1.iconfinder.com/data/icons/avatar-vol-9/512/3-512.png' />
                 <input className={styles.input} placeholder="What's happening?" type="text" />
             </div>
-            <Button>Tweet</Button>
+            <input className={styles.imgInput} placeholder="Enter image URL"/>
+            <Button className={styles.twButton}>Tweet</Button>
         </form>
     </div>
   )

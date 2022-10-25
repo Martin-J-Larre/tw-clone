@@ -17,3 +17,19 @@
     font-size: 20px;
     border: none;
 }
+.imgInput{
+    border: none;
+    padding: 10px;
+}
+.twButton{
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    text-transform: inherit !important;
+    border-radius:  30px !important;
+    height: 40px !important;
+    margin-top: 10px !important;
+    width: 80px;
+    margin-left: auto !important;
+}
