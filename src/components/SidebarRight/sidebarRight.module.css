@@ -1,4 +1,31 @@
 .sidebar{
     width: 30%;
-    border: 1px solid blue;
+    padding: 5px 10px;
+}
+.inputContainer{
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-bg);
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.input{
+    border: none;
+    font-size: 15px;
+    background-color: var(--twitter-bg);
+}
+.searchIcon{
+    color: #808080;
+    margin: 10px;
+}
+.happeningContainer{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+.h2{
+    font-size: 18px;
+    font-weight: 800;
 }
