@@ -1,9 +1,7 @@
 .sidebar{
-    border: 1px solid brown;
+    width: 25%;
     border-right: 1px solid var(--twitter-bg);
-    flex: 0.3;
-    /* margin-left: 100px; */
-    max-width: 250px;
+    width: 25%;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -20,6 +18,7 @@
     font-weight: 800 !important;
     text-transform: inherit !important;
     border-radius:  30px !important;
-    height: 40px !important;
+    height: 50px !important;
+    width: 80% !important;
     margin-top: 10px !important;
 }
