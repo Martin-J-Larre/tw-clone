@@ -6,6 +6,7 @@
 - Material UI
 - CSS modules
 - FlexBox
+- Firebase/Firestore
 
 
 ## Demo
