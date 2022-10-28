@@ -3,24 +3,28 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import { Avatar } from '@mui/material';
 import styles from './postComponent.module.css'
 
-const PostComponent = () => {
+const PostComponent = ({ name, username, verified, text, image, avatar }) => {
     return (
         <div className={styles.postContainer}>
             <div>
-                <Avatar className={styles.avatar}/>
+                <Avatar className={styles.avatar}
+                        src={ avatar }/>
             </div>
             <div className={styles.body}>
                 <div className={styles.header}>
                     <div className={styles.textHeader}>
-                        <h3>
-                            Messi Ronaldo <span className={styles.userName}><VerifiedIcon className={styles.verified}/>@messironaldo</span> 
+                        <h3>{ name } 
+                            <span classname={styles.userName}>
+                               { verified && <VerifiedIcon className={styles.verified}/>}
+                               @{ username }
+                            </span> 
                         </h3>
                     </div>
                     <div className={styles.descriptionHeader}>
-                        <p>Lorem lorem lorem lorem lorem lorem</p>
+                        <p>{ text }</p>
                     </div>
                 </div>
-                <img className={styles.img} src='https://img.freepik.com/free-photo/skyline-downtown-new-york-new-york-usa_268835-773.jpg?w=740&t=st=1666751498~exp=1666752098~hmac=e4918d5ebf6667600a48e42033cc9e05e647808129af920dc8d0ad974774d049'
+                <img className={styles.img} src={ image }
                 alt='New York City' />
                 <div className={styles.footer}>
                     <ChatBubbleOutline />
