@@ -14,7 +14,7 @@ const PostComponent = ({ name, username, verified, text, image, avatar }) => {
                 <div className={styles.header}>
                     <div className={styles.textHeader}>
                         <h3>{ name } 
-                            <span classname={styles.userName}>
+                            <span className={styles.userName}>
                                { verified && <VerifiedIcon className={styles.verified}/>}
                                @{ username }
                             </span> 

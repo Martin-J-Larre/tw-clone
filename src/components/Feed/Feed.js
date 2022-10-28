@@ -9,11 +9,12 @@ import db from '../../firebase'
 
 const Feed = () => {
   const [posts, setPosts] = useState([]);
-
+  
   useEffect(() => {
-    onSnapshot(collection(db, "post"), (snapshot) => {
-    console.log("dataaaaaaa", snapshot.docs);
-  } )
+    const _snapshot = onSnapshot(collection(db, "posts"), (snapshot) => {
+    setPosts(snapshot.docs.map((doc) => ({...doc.data(), id: doc.id })));
+  });
+  return _snapshot
   }, [])
 
   return (
@@ -24,6 +25,7 @@ const Feed = () => {
         {posts.map(
           post => (
           <PostComponent 
+          key={post.id}
           name={ post.name } 
           username={ post.username}
           verified={ post.verified } 
