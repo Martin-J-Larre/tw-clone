@@ -1,4 +1,4 @@
-import NavLink from './siderbarLeftComponents/NavLink';
+import NavLink from '../../components/siderbarLeftComponents/NavLink';
 import HomeIcon from '@mui/icons-material/Home';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TagIcon from '@mui/icons-material/Tag';

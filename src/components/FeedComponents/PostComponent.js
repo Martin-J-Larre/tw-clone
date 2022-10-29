@@ -1,11 +1,12 @@
+import { forwardRef } from 'react'
 import { ChatBubbleOutline, FavoriteBorder, Publish, Repeat } from '@mui/icons-material';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import { Avatar } from '@mui/material';
 import styles from './postComponent.module.css'
 
-const PostComponent = ({ name, username, verified, text, image, avatar }) => {
+const PostComponent = forwardRef(({ name, username, verified, text, image, avatar }, ref) => {
     return (
-        <div className={styles.postContainer}>
+        <div className={styles.postContainer} ref={ ref }>
             <div>
                 <Avatar className={styles.avatar}
                         src={ avatar }/>
@@ -25,7 +26,7 @@ const PostComponent = ({ name, username, verified, text, image, avatar }) => {
                     </div>
                 </div>
                 <img className={styles.img} src={ image }
-                alt='New York City' />
+                alt= "" />
                 <div className={styles.footer}>
                     <ChatBubbleOutline />
                     <Repeat />
@@ -35,6 +36,6 @@ const PostComponent = ({ name, username, verified, text, image, avatar }) => {
             </div>
         </div>
     )
-}
+});
 
 export default PostComponent;

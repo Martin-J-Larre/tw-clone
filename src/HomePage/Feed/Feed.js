@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { collection, onSnapshot } from 'firebase/firestore'
 import styles from './feed.module.css'
-import Header from './FeedComponents/Header'
-import PostComponent from './FeedComponents/PostComponent';
-import TweetContainer from './FeedComponents/TweetContainer';
-import db from '../../firebase'
+import Header from '../../components/FeedComponents/Header'
+import PostComponent from '../../components/FeedComponents/PostComponent';
+import TweetContainer from '../../components/FeedComponents/TweetContainer';
+import db from '../../firebase';
+import FlipMove from "react-flip-move";
 
 
 const Feed = () => {
@@ -14,14 +15,14 @@ const Feed = () => {
     const _snapshot = onSnapshot(collection(db, "posts"), (snapshot) => {
     setPosts(snapshot.docs.map((doc) => ({...doc.data(), id: doc.id })));
   });
-  return _snapshot
+  return _snapshot;
   }, [])
 
   return (
     <section className={styles.feed}>
         <Header />
         <TweetContainer />
-
+        <FlipMove>    
         {posts.map(
           post => (
           <PostComponent 
@@ -32,10 +33,8 @@ const Feed = () => {
           text={ post.text }
           image={ post.image} 
           avatar={ post.avatar}
-          />
-          )
-        )}
-
+          />))}
+        </FlipMove>
     </section>
   )
 }

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { addDoc, collection } from 'firebase/firestore'
 import { Avatar, Button } from '@mui/material';
 import styles from './tweetContainer.module.css';
-import db from '../../../firebase'
+import db from '../../firebase'
 
 const TweetContainer = () => {
   const [tweetMessage, setTweetMessage] = useState("");
