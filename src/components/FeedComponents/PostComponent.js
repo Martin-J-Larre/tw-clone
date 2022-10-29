@@ -14,12 +14,12 @@ const PostComponent = forwardRef(({ name, username, verified, text, image, avata
             <div className={styles.body}>
                 <div className={styles.header}>
                     <div className={styles.textHeader}>
-                        <h3>{ name } 
+                        <h4>{ name } 
                             <span className={styles.userName}>
                                { verified && <VerifiedIcon className={styles.verified}/>}
                                @{ username }
                             </span> 
-                        </h3>
+                        </h4>
                     </div>
                     <div className={styles.descriptionHeader}>
                         <p>{ text }</p>

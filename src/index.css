@@ -19,3 +19,21 @@
   margin: 0 auto;
   padding: 0 10px;
 }
+
+@media only screen and (max-width: 790px) {
+  #sidebar-left{
+    width: 15%;
+  }
+  #responsive-links{
+    justify-content: center;
+  }
+  h3{
+    display: none;
+  }
+  #sidebar-right{
+    display: none;
+  }
+  #feed-resp{
+    width: 85%;
+  }
+}

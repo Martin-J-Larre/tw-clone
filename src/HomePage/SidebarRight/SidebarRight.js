@@ -7,7 +7,7 @@ import { Search } from '@mui/icons-material';
 
 const SidebarRight = () => {
     return (
-        <section className={styles.sidebar}>
+        <section className={styles.sidebar} id="sidebar-right">
             <div className={styles.inputContainer}>
                 <Search className={styles.searchIcon}/>
                 <input className={styles.input} placeholder="Search Twitter" type="text" />

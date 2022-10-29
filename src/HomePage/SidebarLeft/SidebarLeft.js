@@ -13,7 +13,7 @@ import styles from './sidebarLeft.module.css';
 
 const SidebarLeft = () => {
   return (
-    <section className={styles.sidebar}>
+    <section className={styles.sidebar} id="sidebar-left">
       <TwitterIcon className={styles.twIcon} />
       <NavLink active text="Home"  Icon={HomeIcon} />
       <NavLink text="Explore" Icon={TagIcon} />

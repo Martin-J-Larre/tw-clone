@@ -19,7 +19,7 @@ const Feed = () => {
   }, [])
 
   return (
-    <section className={styles.feed}>
+    <section className={styles.feed} id="feed-resp">
         <Header />
         <TweetContainer />
         <FlipMove>    
