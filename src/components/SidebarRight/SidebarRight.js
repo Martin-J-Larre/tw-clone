@@ -1,7 +1,6 @@
 import styles from './sidebarRight.module.css';
 import {
     TwitterTimelineEmbed,
-    TwitterShareButton,
     TwitterTweetEmbed
 } from 'react-twitter-embed'
 import { Search } from '@mui/icons-material';
